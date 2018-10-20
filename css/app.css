@@ -1,0 +1,51 @@
+.homeAgric{height:auto}
+.homeAgricDivs{margin-bottom: 15px}
+.header1{text-align: center;font-size: 61px;  font-family: Times New Roman, Times, serif;}
+.navbar{background:#1e9823 }
+.img_header{height:60px;width:75%}
+.middle_image{background-image: url(1.jpg);}
+.nav-item{padding-left: 20px;font-size: 18px}
+#img_div{ height: 230px;width: 100%;}
+.motto{font-family: "Roboto Slab",Georgia,serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    text-align: inherit;
+    text-transform: none;
+}
+.motto-after{
+	font-family: "Roboto Slab",Georgia,serif;
+    font-weight: 400;
+    letter-spacing: .5px;
+    text-align: inherit;
+    text-transform: none;
+}
+.our-priority-header{
+	font-family: "Roboto Slab",Georgia,serif;
+}
+.faqHeader{
+	font-family: "Roboto Slab",Georgia,serif;
+	 font-size: 50px;
+    font-weight: 400;
+    letter-spacing: .15px;
+    text-align: inherit;
+    text-transform: none;
+}
+.priority_header{
+	font-family: "Roboto Slab",Georgia,serif;
+	 font-size: 45px;
+    font-weight: 400;
+    letter-spacing: .15px;
+    text-align: inherit;
+    text-transform: none;
+}
+.nav-link{color: white}
+.nav-link:hover{color: white}
+.about_food{
+	font-family: "Roboto Slab",Georgia,serif;
+	 font-size: 19px;
+    font-weight: 400;
+    letter-spacing: .15px;
+    text-align: inherit;
+    text-transform: none;
+}

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>__Farming</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/app.css" rel="stylesheet">
+  <style type="text/css">
+    /* Necessary for full page carousel*/
+    html,
+    body,
+    header,
+    .view {
+      height: 100%;
+    }
+
+    /* Carousel*/
+    .carousel,
+    .carousel-item,
+    .carousel-item.active {
+      height: 100%;
+    }
+    .carousel-inner {
+      height: 100%;
+    }
+
+    @media (min-width: 800px) and (max-width: 850px) {
+      .navbar:not(.top-nav-collapse) {
+          background: #1C2331!important;
+      }
+  }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- <div class="light-font">
+
+    <ol class="breadcrumb default-color">
+        <li class="breadcrumb-item active">Home</li>
+    </ol>
+    <ol class="breadcrumb primary-color">
+        <li class="breadcrumb-item"><a class="white-text" href="#">Home</a></li>
+        <li class="breadcrumb-item active">Library</li>
+    </ol>
+
+</div> -->
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="https://farms.com/material-design-for-bootstrap/" target="_blank">
+        <strong>__Farm</strong>
+      </a>
+
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html" target="_blank">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="farming.html" target="_blank">Farming</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="service.html" target="_blank">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html" target="_blank">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Right -->
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a href="https://www.facebook.com/farms" class="nav-link" target="_blank">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://twitter.com/farms" class="nav-link" target="_blank">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link border border-light rounded waves-effect waves-light" data-target="#modalLRFormDemo" data-toggle="modal">
+              <i class="fa fa-login mr-2"></i>Log In
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+
+ 
+  <div class="modal fade show" id="modalLRFormDemo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display:; padding-right: 19px;">
+    <div class="modal-dialog cascading-modal" role="document">
+      <!--Content-->
+      <div class="modal-content">
+
+        <!--Modal cascading tabs-->
+        <div class="modal-c-tabs">
+
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs tabs-2 light-green darken-3" role="tablist" style="background: #054e08!important;">
+            <li class="nav-item waves-effect waves-light">
+              <a class="nav-link" data-toggle="tab" href="#panel17" role="tab" aria-selected="false">
+                <i class="fa fa-user mr-1"></i> Login</a>
+            </li>
+            <li class="nav-item waves-effect waves-light">
+              <a class="nav-link active show" data-toggle="tab" href="#panel18" role="tab" aria-selected="true">
+                <i class="fa fa-user-plus mr-1"></i> Register</a>
+            </li>
+          </ul>
+
+          <!-- Tab panels -->
+          <div class="tab-content">
+            <!--Panel 17-->
+            <div class="tab-pane fade in" id="panel17" role="tabpanel">
+
+              <!--Body-->
+              <div class="modal-body mb-1">
+                <div class="md-form form-sm">
+                  <i class="fa fa-envelope prefix"></i>
+                  <input type="text" id="form2" class="form-control form-control-sm">
+                  <label for="form2">Your email</label>
+                </div>
+
+                <div class="md-form form-sm">
+                  <i class="fa fa-lock prefix"></i>
+                  <input type="password" id="form3" class="form-control form-control-sm">
+                  <label for="form3">Your password</label>
+                </div>
+                <div class="text-center mt-4">
+                  <button class="btn btn-success waves-effect waves-light">Log in
+                    <i class="fa fa-sign-in ml-1"></i>
+                  </button>
+                </div>
+              </div>
+              <!--Footer-->
+              <div class="modal-footer">
+                <div class="options text-center text-md-right mt-1">
+                  <p>Not a member?
+                    <a href="#" class="green-text">Click <b>Register</b> <i class="fa fa-sign-in ml-1"></i></a>
+                  </p>
+                  <p>Forgot
+                    <a href="#" class="green-text">Password?</a>
+                  </p>
+                </div>
+                <button type="button" class="btn btn-outline-success waves-effect ml-auto" data-dismiss="modal">Close</button>
+              </div>
+
+            </div>
+            <!--/.Panel 7-->
+
+            <!--Panel 18-->
+            <div class="tab-pane fade active show" id="panel18" role="tabpanel">
+
+              <!--Body-->
+              <div class="modal-body">
+                <div class="md-form form-sm">
+                  <i class="fa fa-user prefix"></i>
+                  <input type="text" id="form14" class="form-control form-control-sm">
+                  <label for="form14">Your Name</label>
+                </div>
+
+                <div class="md-form form-sm">
+                  <i class="fa fa-home prefix"></i>
+                  <input type="text" id="form5" class="form-control form-control-sm">
+                  <label for="form5">Your Address</label>
+                </div>
+
+                <div class="md-form form-sm">
+                  <i class="fa fa-mobile prefix"></i>
+                  <input type="number" id="form6" class="form-control form-control-sm">
+                  <label for="form6">Phone No</label>
+                </div>
+                 <div class="md-form form-sm">
+                  <i class="fa fa-envelope prefix"></i>
+                  <input type="password" id="form6" class="form-control form-control-sm">
+                  <label for="email">Email</label>
+                </div>
+                 <div class="md-form form-sm">
+                  <i class="fa fa-lock prefix"></i>
+                  <input type="password" id="form6" class="form-control form-control-sm">
+                  <label for="password">Password</label>
+                </div>
+                <div class="md-form form-sm">
+                  <i class="fa fa-lock prefix"></i>
+                  <input type="password" id="form6" class="form-control form-control-sm">
+                  <label for="password">Confirm password</label>
+                </div>
+                
+
+                <div class="text-center form-sm mt-4">
+                  <button class="btn btn-success waves-effect waves-light">Sign up
+                    <i class="fa fa-sign-in ml-1"></i>
+                  </button>
+                </div>
+
+              </div>
+              <!--Footer-->
+              <div class="modal-footer">
+                <div class="options text-right">
+                  <p class="pt-1">Already have an account?
+                    <a href="#" class="green-text">Log In</a>
+                  </p>
+                </div>
+                <button type="button" class="btn btn-outline-success waves-effect ml-auto" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            <!--/.Panel 8-->
+          </div>
+
+        </div>
+      </div>
+      <!--/.Content-->
+    </div>
+  </div>
+  <!-- Navbar -->
+  <!-- data-ride="carousel" -->
+  <!--Carousel Wrapper-->
+  <div id="carousel-example-1z" class="carousel slide carousel-fade">
+
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+
+      <!--First slide-->
+      <div class="carousel-item active">
+        <div class="view">
+
+          <!--Video source-->
+          <video class="video-intro" autoplay loop muted>
+            <source src="img/farmersvideo.mp4" type="video/mp4" />
+          </video>
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>Nonso is working on this</strong>
+              </h1>
+
+              <p>
+                <strong>Let's just be creative in here</strong>
+              </p>
+
+              <p class="mb-4 d-none d-md-block">
+                <strong>You are  Welcome to the most current Agro Tech Website on Earth.</strong>
+              </p>
+
+              <a target="_blank" href="https://farms.com/" class="btn btn-outline-white btn-lg">Enjoy!
+                <i class="fa fa-graduation-cap ml-2"></i>
+              </a>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/First slide-->
+
+      <!--Second slide-->
+      <div class="carousel-item">
+        <div class="view" style="background-image: url('img/wall1.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>Here I am</strong>
+              </h1>
+
+              <p>
+                <strong>LLearn Live Repeat()</strong>
+              </p>
+
+              <p class="mb-4 d-none d-md-block">
+                <strong>What more shall I Say?</strong>
+              </p>
+
+              <a target="_blank" href="#" class="btn btn-outline-white btn-lg">Let's Explore
+                <i class="fa fa-graduation-cap ml-2"></i>
+              </a>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/Second slide-->
+
+      <!--Third slide-->
+      <div class="carousel-item">
+        <div class="view">
+
+          <!--Video source-->
+          <video class="video-intro" autoplay loop muted>
+              <source src="img/turkeys.mp4" type="video/mp4" />
+          </video>
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>Ok, I am so sick and  Tired</strong>
+              </h1>
+
+              <p>
+                <strong>This will act as a Demo playge</strong>
+              </p>
+
+              <p class="mb-4 d-none d-md-block">
+                <strong>The most comprehensive platform to get information about Agriculture</strong>
+              </p>
+
+              <a target="_blank" href="#" class="btn btn-outline-white btn-lg">Start free tutorial
+                <i class="fa fa-graduation-cap ml-2"></i>
+              </a>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/Third slide-->
+
+    </div>
+    <!--/.Slides-->
+
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+
+  </div>
+  <!--/.Carousel Wrapper-->
+
+  <!--Main layout-->
+  <main>
+    <div class="container">
+
+      <!--Section: Main info-->
+      <section class="mt-5 wow fadeIn">
+
+        <!--Grid row-->
+        <div class="row">
+
+          <div class="col-md-12">
+           <p> <h5 style="text-align: center;font-weight: bolder">Step into the World of Organics</h5></p>
+            <h1 style="" class="header1"><b style="color: green">Let The first step in Agro Technology</b> be firmly Anchored!</h1><br>
+            <h6 style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea co ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprm.</h6><br><br><br>
+          </div>
+        </div><br>
+
+          <div class="row homeAgric" style="">
+            <div class="col-md-4 homeAgricDivs" style="max-height: auto; padding-bottom: 25px">
+              <div class="row box_container">
+                <div class="col-md-4" style="float: left;height: 90px;"><img src="img/icon1.png" style="" class="img-responsive  img_header" ></div>
+                <div class="col-md-8" style="text-align: center"><b>hdhhdhdhdhdhd shjsvhsvhjhdh</b> consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut lab,
+                quis nostrud exercitation ullamco lcat cupidatat non
+                proident, sunt in culpa qui.</div>
+              </div>
+            </div>
+            <div class="col-md-4 homeAgricDivs" style="max-height: auto">
+              <div class="row box_container">
+                <div class="col-md-4" style="float: left;height: 60px;"><img src="img/icon2.png" style="" class="img-responsive  img_header " ></div>
+                <div class="col-md-8" style="text-align: center"><b>hdhhdhdhdhdhdhdh</b>  consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut lab,
+                quis nostrud exercitation ullamco lcat cupidatat non
+                proident, sunt in culpa qui.</div>
+              </div>
+            </div>
+            <div class="col-md-4 homeAgricDivs" style="max-height: auto">
+              <div class="row box_container">
+                <div class="col-md-4" style="float: left;height: 90px;"><img src="img/icon6.png" style="" class="img-responsive  img_header" ></div>
+                <div class="col-md-8" style="text-align: center"><b>hdhhdhdhdhdhdhdh</b>  consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut lab,
+                quis nostrud exercitation ullamco lcat cupidatat non
+                proident, sunt in culpa qui.</div>
+              </div>
+            </div><br><br>
+            <div class="col-md-4 homeAgricDivs" style="max-height: auto">
+              <div class="row box_container">
+                <div class="col-md-4" style="float: left;height: 90px;"><img src="img/icon3.png" style="" class="img-responsive  img_header" ></div>
+                <div class="col-md-8" style="text-align: center"><b>hdhhdhdhdhdhdhdh</b>  consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut lab,
+                quis nostrud exercitation ullamco lcat cupidatat non
+                proident, sunt in culpa qui.</div>
+              </div>
+            </div>
+            <div class="col-md-4 homeAgricDivs" style="max-height: auto">
+              <div class="row box_container">
+                <div class="col-md-4" style="float: left;height: 90px;"><img src="img/icon4.png" style="" class="img-responsive  img_header" ></div>
+                <div class="col-md-8" style="text-align: center"><b>hdhhdhdhdhdhdhdh</b>  consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut lab,
+                quis nostrud exercitation ullamco lcat cupidatat non
+                proident, sunt in culpa qui.</div>
+              </div>
+            </div>
+            <div class="col-md-4 homeAgricDivs" style="max-height: auto">
+              <div class="row box_container">
+                <div class="col-md-4" style="float: left;height: 90px;"><img src="img/icon5.png" style="" class="img-responsive  img_header" ></div>
+                <div class="col-md-8" style="text-align: center">orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut lab,
+                quis nostrud exercitation ullamco lcat cupidatat non
+                proident, sunt in culpa qui.</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!--Grid row-->
+
+      </section><br><br><br><br>
+   
+    
+       
+
+    
+            <!--/Grid row-->
+          </div>
+          <!--/Grid column-->
+
+        </div>
+        <!--/Second row-->
+
+    </div>
+  </main>
+          <div class="row middle_image" style="height: 400px;">
+            <div class="col-md-6" style="height: auto;"><img src="img/1.jpg" style="width: 100%; height: auto"></div>
+            <div class="col-md-6" style="height: auto;background: #1d821d; color: white;">
+              
+
+            </div>
+           </div>
+          
+  <div class="row">
+    <div></div>
+  </div>
+
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
+</body>
+
+</html>

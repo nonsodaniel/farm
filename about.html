@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>__Farming</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/app.css" rel="stylesheet">
+  <style type="text/css">
+    /* Necessary for full page carousel*/
+    html,
+    body,
+    header,
+    .view {
+      height: 100%;
+    }
+
+    /* Carousel*/
+    .carousel,
+    .carousel-item,
+    .carousel-item.active {
+      height: 100%;
+    }
+    .carousel-inner {
+      height: 100%;
+    }
+
+    @media (min-width: 800px) and (max-width: 850px) {
+      .navbar:not(.top-nav-collapse) {
+          background: #1C2331!important;
+      }
+  }
+
+  </style>
+</head>
+
+<body style="">
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="https://farms.com/material-design-for-bootstrap/" target="_blank">
+        <strong>__FarmSavvy__</strong>
+      </a>
+
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="about.html" target="_blank">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="farming.html" target="_blank">Farming</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="service.html" target="_blank">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html" target="_blank">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Right -->
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a href="https://www.facebook.com/farms" class="nav-link" target="_blank">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://twitter.com/farms" class="nav-link" target="_blank">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link border border-light rounded waves-effect waves-light" data-target="#modalLRFormDemo" data-toggle="modal">
+              <i class="fa fa-login mr-2"></i>Log In
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+
+  <div class="modal fade show" id="modalLRFormDemo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display:; padding-right: 19px;">
+    <div class="modal-dialog cascading-modal" role="document">
+      <!--Content-->
+      <div class="modal-content">
+
+        <!--Modal cascading tabs-->
+        <div class="modal-c-tabs">
+
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs tabs-2 light-green darken-3" role="tablist" style="background: #054e08!important;">
+            <li class="nav-item waves-effect waves-light">
+              <a class="nav-link" data-toggle="tab" href="#panel17" role="tab" aria-selected="false">
+                <i class="fa fa-user mr-1"></i> Login</a>
+            </li>
+            <li class="nav-item waves-effect waves-light">
+              <a class="nav-link active show" data-toggle="tab" href="#panel18" role="tab" aria-selected="true">
+                <i class="fa fa-user-plus mr-1"></i> Register</a>
+            </li>
+          </ul>
+
+          <!-- Tab panels -->
+          <div class="tab-content">
+            <!--Panel 17-->
+            <div class="tab-pane fade in" id="panel17" role="tabpanel">
+
+              <!--Body-->
+              <div class="modal-body mb-1">
+                <div class="md-form form-sm">
+                  <i class="fa fa-envelope prefix"></i>
+                  <input type="text" id="form2" class="form-control form-control-sm">
+                  <label for="form2">Your email</label>
+                </div>
+
+                <div class="md-form form-sm">
+                  <i class="fa fa-lock prefix"></i>
+                  <input type="password" id="form3" class="form-control form-control-sm">
+                  <label for="form3">Your password</label>
+                </div>
+                <div class="text-center mt-4">
+                  <button class="btn btn-success waves-effect waves-light">Log in
+                    <i class="fa fa-sign-in ml-1"></i>
+                  </button>
+                </div>
+              </div>
+              <!--Footer-->
+              <div class="modal-footer">
+                <div class="options text-center text-md-right mt-1">
+                  <p>Not a member?
+                    <a href="#" class="green-text">Click <b>Register</b> <i class="fa fa-sign-in ml-1"></i></a>
+                  </p>
+                  <p>Forgot
+                    <a href="#" class="green-text">Password?</a>
+                  </p>
+                </div>
+                <button type="button" class="btn btn-outline-success waves-effect ml-auto" data-dismiss="modal">Close</button>
+              </div>
+
+            </div>
+            <!--/.Panel 7-->
+
+            <!--Panel 18-->
+            <div class="tab-pane fade active show" id="panel18" role="tabpanel">
+
+              <!--Body-->
+              <div class="modal-body">
+                <div class="md-form form-sm">
+                  <i class="fa fa-user prefix"></i>
+                  <input type="text" id="form14" class="form-control form-control-sm">
+                  <label for="form14">Your Name</label>
+                </div>
+
+                <div class="md-form form-sm">
+                  <i class="fa fa-home prefix"></i>
+                  <input type="text" id="form5" class="form-control form-control-sm">
+                  <label for="form5">Your Address</label>
+                </div>
+
+                <div class="md-form form-sm">
+                  <i class="fa fa-mobile prefix"></i>
+                  <input type="number" id="form6" class="form-control form-control-sm">
+                  <label for="form6">Phone No</label>
+                </div>
+                 <div class="md-form form-sm">
+                  <i class="fa fa-envelope prefix"></i>
+                  <input type="password" id="form6" class="form-control form-control-sm">
+                  <label for="email">Email</label>
+                </div>
+                 <div class="md-form form-sm">
+                  <i class="fa fa-lock prefix"></i>
+                  <input type="password" id="form6" class="form-control form-control-sm">
+                  <label for="password">Password</label>
+                </div>
+                <div class="md-form form-sm">
+                  <i class="fa fa-lock prefix"></i>
+                  <input type="password" id="form6" class="form-control form-control-sm">
+                  <label for="password">Confirm password</label>
+                </div>
+                
+
+                <div class="text-center form-sm mt-4">
+                  <button class="btn btn-success waves-effect waves-light">Sign up
+                    <i class="fa fa-sign-in ml-1"></i>
+                  </button>
+                </div>
+
+              </div>
+              <!--Footer-->
+              <div class="modal-footer">
+                <div class="options text-right">
+                  <p class="pt-1">Already have an account?
+                    <a href="#" class="green-text">Log In</a>
+                  </p>
+                </div>
+                <button type="button" class="btn btn-outline-success waves-effect ml-auto" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            <!--/.Panel 8-->
+          </div>
+
+        </div>
+      </div>
+      <!--/.Content-->
+    </div>
+  </div>
+
+    <div class="" style="">   
+      <div class="" id="img_div" style="background-image: url('img/dark_green.jpg');background-repeat: no-repeat;background-size: cover;">
+      <h2 style="">bksj sb ugubu</h2>
+      </div>
+    </div><br><br>
+
+    <h6 class="motto"  style="text-align: center;">Our Motto: Live and Let Live</h6>
+     <h3 class="motto-after"  style="text-align: center;"><b><i style="color: green;font-size: 30px">Nature</i> Inspires!</b></h3>
+  <br>
+
+     <div class="container" style="">
+        <div class="row">
+       <div class="col-md-4" style="">
+          <div class="">
+            <div class="img"><img src="img/orange.jpg" style="height:200px;width: 100%;"></div><br>
+            <h5 class="about_food"><b>Succulent food to eat</b></h5><br>
+            <p>iquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div><hr>
+
+       </div>
+        <div class="col-md-4">
+          <div class="">
+            <div class="img "><img src="img/egg.jpg" style="height:200px;width: 100%;"></div><br>
+            <h5 class="about_food"><b>Succulent food to eat</b></h5><br>
+            <p>iquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div><hr>
+
+       </div>
+        <div class="col-md-4">
+          <div class="">
+            <div class="img"><img src="img/tomato.jpg" style="height:200px;width: 100%;"></div><br>
+            <h5 class="about_food"><b>Succulent food to eat</b></h5><br>
+            <p>iquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div><hr>
+
+       </div>
+     </div>
+</div><br><br>
+
+
+    <section class="our-priority">
+        <h1 class="priority_header" style="text-align: center;"><b>Our Priority is Protect <b style="color: green">The Environment</b></b></h1>
+       <div class="" style="width: 62%;margin-left: 19%">
+         <p style="text-align: center;">
+          “Organic farming is much more than choosing not to use chemical pesticides, fertilizer and genetically modified organisms, 
+           growth hormones and plant antibiotics. It is a wholesome method of relying on renewable materials, 
+           crop and livestock production for a healthy living!”
+         </p>
+       </div><br>
+      <div class="container d-flex justify-content-center" style="">
+        <div class="col-md-10" style="">
+          <div class="col-md-2 " style="float: left;"><img src="img/icon1.png"></div>
+          <div class="col-md-9" style="max-width: 100%;">
+            <h5 style="font-size: 16px;font-weight: bolder"><b>The first subheading</b></h5>
+            olor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+        </div><br>
+
+        <div class="container d-flex justify-content-center" style="">
+        <div class="col-md-10" style="">
+          <div class="col-md-2 " style="float: left;"><img src="img/icon2.png"></div>
+          <div class="col-md-9" style="max-width: 100%;">
+            <h5 style="font-size: 16px;font-weight: bolder"><b>The first subheading</b></h5>
+            olor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+        </div><br>
+
+        <div class="container d-flex justify-content-center" style="">
+        <div class="col-md-10" style="">
+          <div class="col-md-2 " style="float: left;"><img src="img/icon3.png"></div>
+          <div class="col-md-9" style="max-width: 100%;">
+            <h5 style="font-size: 16px;font-weight: bolder"><b>The first subheading</b></h5>
+            olor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+        </div>
+     
+        
+    </section><br><br><br>
+
+
+      <section class="faq">
+        <h1 class="faqHeader" style="text-align: center;">Frequently <b style="color: green">Asked Questions</b></h1><br><br>
+          
+            <div class="row">
+              <div class="col-md-4" style=""><img src="img/fowl.jpg" style="width: 100%;height: 250px;"></div>
+              <div class="col-md-4" style=""></div>
+              <div class="col-md-4" style=""><img src="img/wall2.jpg"  style="width: 100%;height: 250px;"></div>
+            </div>
+        
+
+      </section>
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
+</body>
+
+</html>

@@ -5,7 +5,11 @@
 .img_header{height:60px;width:75%}
 .middle_image{background-image: url(1.jpg);}
 .nav-item{padding-left: 20px;font-size: 18px}
-#img_div{ height: 230px;width: 100%;}
+#img_div{ height: 230px;width: 100%;
+ background-image: url('img/dark_green.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
+}
 .motto{font-family: "Roboto Slab",Georgia,serif;
     font-size: 16px;
     font-weight: 400;
@@ -48,4 +52,38 @@
     letter-spacing: .15px;
     text-align: inherit;
     text-transform: none;
+}
+.provide{
+	font-family: "Roboto Slab",Georgia,serif;
+	 font-size: 30px;
+    font-weight: 400;
+    letter-spacing: .15px;
+    text-align: inherit;
+    text-transform: none;
+}
+.we-offer{
+	border-bottom: 1px dotted #ccc;
+	color: black;
+	font-size: 18px;
+	margin-top: 15px
+}
+
+.question{
+	cursor: pointer;
+	background: green;color: white;
+	height: 30px;
+	width: 10%
+}
+.footer{
+	
+   
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
 }

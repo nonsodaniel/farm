@@ -16,7 +16,7 @@
     letter-spacing: .5px;
     text-align: inherit;
     text-transform: none;
-}
+}background-image: url('img/dark_green.jpg');background-repeat: no-repeat;background-size: cover;
 .motto-after{
 	font-family: "Roboto Slab",Georgia,serif;
     font-weight: 400;
@@ -62,13 +62,13 @@
     text-transform: none;
 }
 .toll_free{
-	font-family: "Roboto Slab",Georgia,serif;
+	
 	 font-size: 30px;
     font-weight: 400;
     letter-spacing: .15px;
     text-align: inherit;
     text-transform: none;
-    color: #377537;
+    color: black
 }
 .we-offer{
 	border-bottom: 1px dotted #ccc;
@@ -162,4 +162,11 @@
     letter-spacing: .15px;
     text-align: inherit;
     text-transform: none;
+  }
+  .myfooter{
+    background-image: url('img/dark_green.jpg');background-repeat: no-repeat;background-size: cover;
+  }
+  .toolFree{
+    margin-top: 20px
+
   }

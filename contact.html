@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>__Farming</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/app.css" rel="stylesheet">
+  <style type="text/css">
+    /* Necessary for full page carousel*/
+    html,
+    body,
+    header,
+    .view {
+      height: 100%;
+    }
+
+    /* Carousel*/
+    .carousel,
+    .carousel-item,
+    .carousel-item.active {
+      height: 100%;
+    }
+    .carousel-inner {
+      height: 100%;
+    }
+
+    @media (min-width: 800px) and (max-width: 850px) {
+      .navbar:not(.top-nav-collapse) {
+          background: #1C2331!important;
+      }
+  }
+
+  </style>
+</head>
+
+<body style="">
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="https://farms.com/material-design-for-bootstrap/">
+        <strong>__FarmSavvy__</strong>
+      </a>
+
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="farming.html">Farming</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="service.html">Services</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Right -->
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a href="https://www.facebook.com/farms" class="nav-link">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://twitter.com/farms" class="nav-link">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link border border-light rounded waves-effect waves-light" data-target="#modalLRFormDemo" data-toggle="modal">
+              <i class="fa fa-login mr-2"></i>Log In
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+
+  <div class="modal fade show" id="modalLRFormDemo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display:; padding-right: 19px;">
+    <div class="modal-dialog cascading-modal" role="document">
+      <!--Content-->
+      <div class="modal-content">
+
+        <!--Modal cascading tabs-->
+        <div class="modal-c-tabs">
+
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs tabs-2 light-green darken-3" role="tablist" style="background: #054e08!important;">
+            <li class="nav-item waves-effect waves-light">
+              <a class="nav-link" data-toggle="tab" href="#panel17" role="tab" aria-selected="false">
+                <i class="fa fa-user mr-1"></i> Login</a>
+            </li>
+            <li class="nav-item waves-effect waves-light">
+              <a class="nav-link active show" data-toggle="tab" href="#panel18" role="tab" aria-selected="true">
+                <i class="fa fa-user-plus mr-1"></i> Register</a>
+            </li>
+          </ul>
+
+          <!-- Tab panels -->
+          <div class="tab-content">
+            <!--Panel 17-->
+            <div class="tab-pane fade in" id="panel17" role="tabpanel">
+
+              <!--Body-->
+              <div class="modal-body mb-1">
+                <div class="md-form form-sm">
+                  <i class="fa fa-envelope prefix"></i>
+                  <input type="text" id="log_email" class="form-control form-control-sm log_email">
+                  <label for="form2">Your email</label>
+                </div>
+
+                <div class="md-form form-sm">
+                  <i class="fa fa-lock prefix"></i>
+                  <input type="password" id="log_password" class="form-control form-control-sm log_password">
+                  <label for="form3">Your password</label>
+                </div>
+                <div class="text-center mt-4">
+                  <button class="btn btn-success waves-effect waves-light btn_login">Log in
+                    <i class="fa fa-sign-in ml-1"></i>
+                  </button>
+                </div>
+              </div>
+              <!--Footer-->
+              <div class="modal-footer">
+                <div class="options text-center text-md-right mt-1">
+                  <p>Not a member?
+                    <a href="#" class="green-text">Click <b>Register</b> <i class="fa fa-sign-in ml-1"></i></a>
+                  </p>
+                  <p>Forgot
+                    <a href="#" class="green-text">Password?</a>
+                  </p>
+                </div>
+                <button type="button" class="btn btn-outline-success waves-effect ml-auto" data-dismiss="modal">Close</button>
+              </div>
+
+            </div>
+            <!--/.Panel 7-->
+
+            <!--Panel 18-->
+            <div class="tab-pane fade active show" id="panel18" role="tabpanel">
+
+              <!--Body-->
+              <div class="modal-body">
+                <div class="md-form form-sm">
+                  <i class="fa fa-user prefix"></i>
+                  <input type="text" id="name" class="form-control form-control-sm name">
+                  <label for="name">Your Full Name</label>
+                </div>
+                <div class="md-form form-sm">
+                  <i class="fa fa-envelope prefix"></i>
+                  <input type="email" id="email" class="form-control form-control-sm email">
+                  <label for="email">Email</label>
+                </div>
+                <div class="md-form form-sm">
+                  <i class="fa fa-mobile prefix"></i>
+                  <input type="number" id="phone" class="form-control form-control-sm phone">
+                  <label for="form6">Phone No</label>
+                </div>
+                <div class="md-form form-sm">
+                  <i class="fa fa-home prefix"></i>
+                  <input type="text" id="state" class="form-control form-control-sm state">
+                  <label for="form5">Your State</label>
+                </div>
+                 <div class="md-form form-sm">
+                  <i class="fa fa-home prefix"></i>
+                  <input type="text" id="lga" class="form-control form-control-sm lga">
+                  <label for="form5">Your Local Government</label>
+                </div>
+                 
+                 <div class="md-form form-sm">
+                  <i class="fa fa-lock prefix"></i>
+                  <input type="password" id="password1" class="form-control form-control-sm password1">
+                  <label for="password">Password</label>
+                </div>
+                <div class="md-form form-sm">
+                  <i class="fa fa-lock prefix"></i>
+                  <input type="password" id="password2" class="form-control form-control-sm password2">
+                  <label for="password">Confirm password</label>
+                </div>
+                
+
+                <div class="text-center form-sm mt-4">
+                  <button class="btn btn-success waves-effect waves-light sign_up">Sign up
+                    <i class="fa fa-sign-in ml-1"></i>
+                  </button>
+                </div>
+
+              </div>
+              <!--Footer-->
+              <div class="modal-footer">
+                <div class="options text-right">
+                  <p class="pt-1">Already have an account?
+                    <a href="#" class="green-text">Log In</a>
+                  </p>
+                </div>
+                <button type="button" class="btn btn-outline-success waves-effect ml-auto" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            <!--/.Panel 8-->
+          </div>
+
+        </div>
+      </div>
+      <!--/.Content-->
+    </div>
+  </div>
+
+  <div class="" style="">   
+      <div class="" id="img_div" style="background-image: url('img/dark_green.jpg');background-repeat: no-repeat;background-size: cover;">
+      <h2 style="">bksj sb ugubu</h2>
+      </div>
+    </div>
+
+      <div class="">
+      <!--   <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3963.2398281306387!2d3.3852361!3d6.6170989!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b931c385fe807%3A0xf29fe619b4dc163a!2sIkosi+Ketu%2FMile+12%2FAgiliti%2FMaidan%2C+Lagos!5e0!3m2!1sen!2sng!4v1540200920095"  height="450" frameborder="0" style="border:0;" allowfullscreen></iframe> -->
+      </div>
+  <section>
+    <div class="row" style="height: 400px;border:1px solid red;margin-top: 70px">   
+      <div class="col-md-4" style="border:1px solid green">
+          <h2 style="text-align: center;" class="toll_free">Toll Free Numbers</h2><br><br>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><i class="fa fa-mobile-phone ml-1" style="font-size: 23px;"></i>
+            <b>Ihedioha Chinonso:</b> <span>090999494900</span>
+          </li>
+          <li class="list-group-item"><i class="fa fa-mobile-phone ml-1" style="font-size: 23px;"></i>
+            <b>Ihedioha Chinonso:</b> <span>090999494900</span>
+          </li>
+          <li class="list-group-item"><i class="fa fa-mobile-phone ml-1" style="font-size: 23px;"></i>
+            <b>Ihedioha Chinonso:</b> <span>090999494900</span>
+          </li>
+          <li class="list-group-item"><i class="fa fa-mobile-phone ml-1" style="font-size: 23px;"></i>
+            <b>Ihedioha Chinonso:</b> <span>090999494900</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-8" style="border:1px solid blue">
+         <div class="col-md-4" style="border:1px solid gree">3</div>
+         <div class="col-md-4" style="border:1px solid blue">3</div>
+      </div>
+    
+    
+  </div>
+</section>  <br>
+<section>
+<div class="before_footer row" style="height: 70px">
+  <div class="col-md-6" style="background: green;height: 70px;color: white"><h4 style="text-align: center;">Let us make a difference in our Environment</h4></div>
+  <div class="col-md-6" style="background:red;height: 70px;color: white"><h4>Let us make the Planet Earth a better place for us to live</h4></div>
+</div>
+</section>
+    <section>
+      <!-- Footer -->
+<footer class="page-footer font-small green pt-4 footer" style="background-image: url('img/dark_green.jpg');background-repeat: no-repeat;background-size: cover;">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center mask flex-center waves-effect waves-light rgba-green-strong" style="background: rgba(14, 70, 16, 0.66);">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-4 mt-md-0 mt-3">
+
+          <!-- Content -->
+          <h5 class="text-uppercase" style="text-align: center;">Footer Content</h5>
+          <p>Organic farming is beneficial to a wide range of organisms. It restores the biodiversity of the core resources and habitat of the region. The symbiosis between flora and fauna, animals, and humans with a chemical-free environment is paradise on Earth.</p>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+
+            <!-- Links -->
+            <h5 class="text-uppercase">Contacts</h5><br><br>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!"> <i class="fa fa-home prefix"></i> 10, Wale Adelekan Street, Magodo Lagos.</a>
+              </li>
+              <li>
+                <a href="#!"><i class="fa fa-mobile prefix"></i> +234-893-383-38</a>
+              </li>
+              <li>
+                <a href="#!"><i class="fa fa-envelope prefix"></i> farmsavvy@gmail.com</a>
+              </li>
+              <li>
+                <a href="#!"><i class="fa fa-lock prefix"></i> udksbkbkjsbjbsjk</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-2 mb-3">
+
+            <!-- Links -->
+            <h5 class="text-uppercase">Follow us</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!"><button type="button" class="btn btn-primary">
+                    <i class="fa fa-facebook pr-1"></i>
+                     </button>
+                   </a>
+              </li>
+              <li>
+                <a href="#!"><button type="button" class="btn btn-info">
+                    <i class="fa fa-twitter pr-1"></i>
+                     </button>
+                   </a>
+              </li>
+              <li>
+                <a href="#!"><button type="button" class="btn btn-danger">
+                   <i class="fa fa-google-plus pr-1"></i>
+                     </button>
+                   </a>
+              </li>
+               <li>
+                <a href="#!">
+                  <button type="button" class="btn btn-info btn-li">
+                      <i class="fa fa-linkedin pr-1"></i>
+                       </button>
+                   </a>
+              </li>
+            </ul>
+
+          </div>
+                <div class="col-md-2 mb-md-2 mb-3">
+
+            <!-- Links -->
+            <h3 class="text-uppercase">Subscribe</h3><br>
+              <h6>Enter your email and we’ll send you latest information and plans.</h6>
+            <!-- Material input -->
+              <div class="md-form">
+                  <input type="text" id="form1" class="form-control" style="color: white;font-size: 19px">
+                  <label for="form1" >Your Email</label>
+              </div>
+          </div>
+          <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="https://farmsavvy.com"> farmsavvy.com</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+    </section>
+
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Initializations -->
+   <script type="text/javascript" src="js/app.js"></script>
+  <!--  My custom app.js -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+    
+  // http://www.agricultureinformation.com/forums/general-questions-answers/
+
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: -25.344, lng: 131.036};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+   
+  </script>
+</body>
+
+</html>

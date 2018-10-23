@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>__Farming</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/app.css" rel="stylesheet">
+  <style type="text/css">
+    /* Necessary for full page carousel*/
+    html,
+    body,
+    header,
+    .view {
+      height: 100%;
+    }
+
+    /* Carousel*/
+    .carousel,
+    .carousel-item,
+    .carousel-item.active {
+      height: 100%;
+    }
+
+    .carousel-inner {
+      height: 100%;
+    }
+
+    @media (min-width: 800px) and (max-width: 850px) {
+      .navbar:not(.top-nav-collapse) {
+        background: #1C2331 !important;
+      }
+    }
+  </style>
+</head>
+
+<body style="overflow-x: hidden;">
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" style="">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="https://farms.com/material-design-for-bootstrap/">
+        <strong>__FarmSavvy__</strong>
+      </a>
+
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="farming.html">Farming</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Right -->
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a href="https://www.facebook.com/farms" class="nav-link">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://twitter.com/farms" class="nav-link">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link border border-light rounded waves-effect waves-light" data-target="#modalLRFormDemo"
+              data-toggle="modal">
+              <i class="fa fa-login mr-2"></i>Log In
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+
+  <div class="modal fade show" id="modalLRFormDemo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="padding-right: 19px;">
+    <div class="modal-dialog cascading-modal" role="document">
+      <!--Content-->
+      <div class="modal-content">
+
+        <!--Modal cascading tabs-->
+        <div class="modal-c-tabs">
+
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs tabs-2 light-green darken-3" role="tablist" style="background: #054e08!important;">
+            <li class="nav-item waves-effect waves-light">
+              <a class="nav-link" data-toggle="tab" href="#panel17" role="tab" aria-selected="false">
+                <i class="fa fa-user mr-1"></i> Login</a>
+            </li>
+            <li class="nav-item waves-effect waves-light">
+              <a class="nav-link active show" data-toggle="tab" href="#panel18" role="tab" aria-selected="true">
+                <i class="fa fa-user-plus mr-1"></i> Register</a>
+            </li>
+          </ul>
+
+          <!-- Tab panels -->
+          <div class="tab-content">
+            <!--Panel 17-->
+            <div class="tab-pane fade in" id="panel17" role="tabpanel">
+
+              <!--Body-->
+              <div class="modal-body mb-1">
+                <div class="md-form form-sm">
+                  <i class="fa fa-envelope prefix"></i>
+                  <input type="text" id="log_email" class="form-control form-control-sm log_email">
+                  <label for="form2">Your email</label>
+                </div>
+
+                <div class="md-form form-sm">
+                  <i class="fa fa-lock prefix"></i>
+                  <input type="password" id="log_password" class="form-control form-control-sm log_password">
+                  <label for="form3">Your password</label>
+                </div>
+                <div class="text-center mt-4">
+                  <button class="btn btn-success waves-effect waves-light btn_login">Log in
+                    <i class="fa fa-sign-in ml-1"></i>
+                  </button>
+                </div>
+              </div>
+              <!--Footer-->
+              <div class="modal-footer">
+                <div class="options text-center text-md-right mt-1">
+                  <p>Not a member?
+                    <a href="#" class="green-text">Click <b>Register</b> <i class="fa fa-sign-in ml-1"></i></a>
+                  </p>
+                  <p>Forgot
+                    <a href="#" class="green-text">Password?</a>
+                  </p>
+                </div>
+                <button type="button" class="btn btn-outline-success waves-effect ml-auto" data-dismiss="modal">Close</button>
+              </div>
+
+            </div>
+            <!--/.Panel 7-->
+
+            <!--Panel 18-->
+            <div class="tab-pane fade active show" id="panel18" role="tabpanel">
+
+              <!--Body-->
+              <div class="modal-body" style="overflow-y: auto;">
+                <div class="md-form form-sm">
+                  <i class="fa fa-user prefix"></i>
+                  <input type="text" id="name" class="form-control form-control-sm name">
+                  <label for="name">Your Full Name</label>
+                </div>
+                <div class="md-form form-sm">
+                  <i class="fa fa-envelope prefix"></i>
+                  <input type="email" id="email" class="form-control form-control-sm email">
+                  <label for="email">Email</label>
+                </div>
+                <div class="md-form form-sm">
+                  <i class="fa fa-mobile prefix"></i>
+                  <input type="number" id="phone" class="form-control form-control-sm phone">
+                  <label for="form6">Phone No</label>
+                </div>
+                <div class="md-form form-sm">
+                  <i class="fa fa-home prefix"></i>
+                  <input type="text" id="state" class="form-control form-control-sm state">
+                  <label for="form5">Your State</label>
+                </div>
+                <div class="md-form form-sm">
+                  <i class="fa fa-home prefix"></i>
+                  <input type="text" id="lga" class="form-control form-control-sm lga">
+                  <label for="form5">Your Local Government</label>
+                </div>
+
+                <div class="md-form form-sm">
+                  <i class="fa fa-lock prefix"></i>
+                  <input type="password" id="password1" class="form-control form-control-sm password1">
+                  <label for="password">Password</label>
+                </div>
+                <div class="md-form form-sm">
+                  <i class="fa fa-lock prefix"></i>
+                  <input type="password" id="password2" class="form-control form-control-sm password2">
+                  <label for="password">Confirm password</label>
+                </div>
+
+
+                <div class="text-center form-sm mt-4">
+                  <button class="btn btn-success waves-effect waves-light sign_up">Sign up
+                    <i class="fa fa-sign-in ml-1"></i>
+                  </button>
+                </div>
+
+              </div>
+              <!--Footer-->
+              <div class="modal-footer">
+                <div class="options text-right">
+                  <p class="pt-1">Already have an account?
+                    <a href="#" class="green-text">Log In</a>
+                  </p>
+                </div>
+                <button type="button" class="btn btn-outline-success waves-effect ml-auto" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            <!--/.Panel 8-->
+          </div>
+
+        </div>
+      </div>
+      <!--/.Content-->
+    </div>
+  </div>
+  <br>
+
+  <section style="margin-top: 76px">
+    <h1 style="text-align: center;" class="">Agro Forum</h1>
+    <div class="container">
+
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-md-8 mb-4">
+          <!-- Breadcrumbs -->
+          <!--Card: section question-->
+          <div class="question-card card mb-4">
+            <!-- Card header -->
+            <div class="card-header forum-card-img-30 d-flex justify-content-between">
+              <p class="pt-2 mb-0">
+                <img src="https://secure.gravatar.com/avatar/62c9c125499e280d7f96a75e939f3046?s=96&amp;d=mm&amp;r=g"
+                  alt="" class="rounded-circle mr-2">
+                <strong><a href="">Ihedioha Chinonso</a></strong>
+                <span class="badge green mx-1">new</span>
+                asked 5 seconds ago </p>
+              <div>
+                <a href="#" type="button" class="btn btn-outline-dark-green btn-sm px-2 waves-effect show_login">
+                  <span class="value">3</span>
+                  <i class="fa fa-thumbs-up ml-1"></i>
+                </a>
+                <a href="#" type="button" class="btn btn-outline-danger btn-sm px-2 waves-effect show_login">
+                  <span class="value">2</span>
+                  <i class="fa fa-thumbs-down ml-1"></i>
+                </a>
+              </div>
+            </div>
+            <!--Card content-->
+            <div class="card-body">
+              <p>Is using quality better than our local Fertilizer better than manure?</p>
+              <hr>
+              <!-- Comments -->
+              <div class="comment-card ml-5">
+
+                <div class="form-group mb-0">
+                  <a href="#" class="btn btn-success btn-sm ml-0 comment-form-toggle show_login waves-effect waves-light">View
+                    Answer</a>
+                </div>
+              </div>
+              <!-- Comments -->
+            </div>
+          </div>
+
+          <div class="question-card card mb-4">
+            <!-- Card header -->
+            <div class="card-header forum-card-img-30 d-flex justify-content-between">
+              <p class="pt-2 mb-0">
+                <img src="https://secure.gravatar.com/avatar/62c9c125499e280d7f96a75e939f3046?s=96&amp;d=mm&amp;r=g"
+                  alt="" class="rounded-circle mr-2">
+                <strong><a href="">Olalekan Kolapo</a></strong>
+                <span class="badge green mx-1">new</span>
+                asked 5 minutes ago </p>
+              <div>
+                <a href="#" type="button" class="btn btn-outline-dark-green btn-sm px-2 waves-effect show_login">
+                  <span class="value">1</span>
+                  <i class="fa fa-thumbs-up ml-1"></i>
+                </a>
+                <a href="#" type="button" class="btn btn-outline-danger btn-sm px-2 waves-effect show_login">
+                  <span class="value">2</span>
+                  <i class="fa fa-thumbs-down ml-1"></i>
+                </a>
+              </div>
+            </div>
+            <!--Card content-->
+            <div class="card-body">
+              <p>How would the future of Agriculture in Africa look like.. Worse or Better?</p>
+              <hr>
+              <!-- Comments -->
+              <div class="comment-card ml-5">
+
+                <div class="form-group mb-0">
+                  <a href="#" class="btn btn-success btn-sm ml-0 comment-form-toggle show_login waves-effect waves-light">View
+                    Answer</a>
+                </div>
+              </div>
+              <!-- Comments -->
+            </div>
+          </div>
+
+          <div class="question-card card mb-4">
+            <!-- Card header -->
+            <div class="card-header forum-card-img-30 d-flex justify-content-between">
+              <p class="pt-2 mb-0">
+                <img src="https://secure.gravatar.com/avatar/62c9c125499e280d7f96a75e939f3046?s=96&amp;d=mm&amp;r=g"
+                  alt="" class="rounded-circle mr-2">
+                <strong><a href="">Ekunola John</a></strong>
+                <span class="badge green mx-1">old</span>
+                asked 2 weeks ago </p>
+              <div>
+                <a href="#" type="button" class="btn btn-outline-dark-green btn-sm px-2 waves-effect show_login">
+                  <span class="value">0</span>
+                  <i class="fa fa-thumbs-up ml-1"></i>
+                </a>
+                <a href="#" type="button" class="btn btn-outline-danger btn-sm px-2 waves-effect show_login">
+                  <span class="value">0</span>
+                  <i class="fa fa-thumbs-down ml-1"></i>
+                </a>
+              </div>
+            </div>
+            <!--Card content-->
+            <div class="card-body">
+              <p>Some of my Poultry products are down with <b>Bird Flu</b>, what to do?</p>
+              <hr>
+              <!-- Comments -->
+              <div class="comment-card ml-5">
+
+                <div class="form-group mb-0">
+                  <a href="#" class="btn btn-success btn-sm ml-0 comment-form-toggle show_login waves-effect waves-light">View
+                    Answer</a>
+                </div>
+              </div>
+              <!-- Comments -->
+            </div>
+          </div>
+          <div class="question-card card mb-4">
+            <!-- Card header -->
+            <div class="card-header forum-card-img-30 d-flex justify-content-between">
+              <p class="pt-2 mb-0">
+                <img src="https://secure.gravatar.com/avatar/62c9c125499e280d7f96a75e939f3046?s=96&amp;d=mm&amp;r=g"
+                  alt="" class="rounded-circle mr-2">
+                <strong><a href="">fredemagi</a></strong>
+                <span class="badge green mx-1">new</span>
+                asked 6 months ago </p>
+              <div>
+                <a href="#" type="button" class="btn btn-outline-dark-green btn-sm px-2 waves-effect show_login">
+                  <span class="value">0</span>
+                  <i class="fa fa-thumbs-up ml-1"></i>
+                </a>
+                <a href="#" type="button" class="btn btn-outline-danger btn-sm px-2 waves-effect show_login">
+                  <span class="value">0</span>
+                  <i class="fa fa-thumbs-down ml-1"></i>
+                </a>
+              </div>
+            </div>
+            <!--Card content-->
+            <div class="card-body">
+              <p>Does mdboostrap support or supply any forum template like this support forum?</p>
+              <hr>
+              <!-- Comments -->
+              <div class="comment-card ml-5">
+
+                <div class="form-group mb-0">
+                  <a href="#" class="btn btn-success btn-sm ml-0 comment-form-toggle show_login waves-effect waves-light">View
+                    Answer</a>
+                </div>
+              </div>
+              <!-- Comments -->
+            </div>
+          </div>
+          <!--Card: section question-->
+          <!--Card: Answer-->
+          <div class="answer-card card mb-4">
+            <!-- Card header -->
+            <div class="card-header forum-card-img-30 d-flex justify-content-between">
+              <p class="pt-2 mb-0">
+                <img src="https://secure.gravatar.com/avatar/4cf642822dc5caf650facd79b8f64a95?s=96&amp;d=mm&amp;r=g"
+                  alt="" class="rounded-circle mr-2">
+                <strong><a href="">Marta Szymanska</a></strong> answered 6 months ago</p>
+              <div>
+                <a href="#" type="button" class="btn btn-outline-dark-green btn-sm px-2 waves-effect show_login">
+                  <span class="value">0</span>
+                  <i class="fa fa-thumbs-up ml-1"></i>
+                </a>
+                <a href="#" type="button" class="btn btn-outline-danger btn-sm px-2 waves-effect show_login">
+                  <span class="value">0</span>
+                  <i class="fa fa-thumbs-down ml-1"></i>
+                </a>
+                <a href="javascript:void(0)" type="button" class="btn btn-outline-primary btn-sm px-2 waves-effect is-hidden">
+                  Best answer <i class="fa fa-check ml-1"></i>
+                </a>
+              </div>
+            </div>
+            <!--Card content-->
+            <div class="card-body">
+              <p>Hi,</p>
+              <p>no, we don't have any support template in our offer.</p>
+              <p>Best,</p>
+              <p>Marta</p>
+              <hr>
+              <!-- Comments -->
+              <div class="comment-card ml-5">
+                <div class="form-group mb-0">
+                  <a href="#" class="btn btn-success btn-sm ml-0 comment-form-toggle show_login waves-effect waves-light">View
+                    Answer</a>
+                </div>
+              </div>
+              <!-- Comments -->
+            </div>
+          </div>
+          <!--Card: Answer-->
+          <!--Card: Answer-->
+          <div class="card card-tabs mb-4">
+            <!-- Card header -->
+            <div class="card-header d-flex justify-content-between">
+              <!-- Tabs navs -->
+              <ul class="nav" id="myTab" role="tablist">
+                <li class="nav-item p-0 waves-effect ">
+                  <a class="nav-link nav-link-editor active" id="home-tab" data-toggle="tab" href="#answer-editor" role="tab"
+                    aria-controls="home" aria-selected="true">Write</a>
+                </li>
+                <li class="nav-item p-0 waves-effect">
+                  <a class="nav-link nav-link-preview" id="profile-tab" data-toggle="tab" href="#answer-preview" role="tab"
+                    aria-controls="profile" aria-selected="false">Preview</a>
+                </li>
+              </ul>
+              <!-- Tabs navs -->
+              <!-- Text editor -->
+              <div class="pt-2">
+                <button type="button" class="btn btn-outline-grey btn-sm px-2 waves-effect wysiwyg-code-button"
+                  data-toggle="tooltip" data-placement="top" title="" data-original-title="Insert code">
+                  <i class="fa fa-code"></i>
+                </button>
+                <button type="button" class="btn btn-outline-grey btn-sm px-2 waves-effect wysiwyg-link-button"
+                  data-toggle="tooltip" data-placement="top" title="" data-original-title="Add link">
+                  <i class="fa fa-link"></i>
+                </button>
+                <button type="button" class="btn btn-outline-grey btn-sm px-2 waves-effect wysiwyg-image-button"
+                  data-toggle="tooltip" data-placement="top" title="" data-original-title="Add image">
+                  <i class="fa fa-image"></i>
+                </button>
+                <!--<button type="button" class="btn btn-outline-grey btn-sm px-2 waves-effect answer-mdbsnippet-button">Create MDB snippet</button>-->
+              </div>
+              <!-- Text editor -->
+            </div>
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <!-- Panel 1 -->
+              <div class="tab-pane tab-editor fade in show active" id="answer-editor" role="tabpanel" aria-labelledby="home-tab">
+                <!-- Default form reply -->
+                <form id="answer-form" method="post" class="needs-validation" novalidate="">
+                  <!-- Answer -->
+                  <input type="hidden" name="action" value="add-answer">
+                  <div id="wp-answer-wrap" class="wp-core-ui wp-editor-wrap tmce-active">
+                    <link rel="stylesheet" id="dashicons-css" href="https://mdbootstrap.com/wp-includes/css/dashicons.min.css?ver=4.9.8"
+                      type="text/css" media="all">
+                    <link rel="stylesheet" id="editor-buttons-css" href="https://mdbootstrap.com/wp-includes/css/editor.min.css?ver=4.9.8"
+                      type="text/css" media="all">
+                    <div id="wp-answer-editor-container" class="wp-editor-container">
+                      <div id="mceu_0" class="mce-tinymce mce-container mce-panel" hidefocus="1" tabindex="-1" role="application"
+                        style="visibility: hidden; border-width: 1px; width: 100%;">
+                        <div id="mceu_0-body" class="mce-container-body mce-stack-layout">
+                          <div id="mceu_1" class="mce-top-part mce-container mce-stack-layout-item mce-first">
+                            <div id="mceu_1-body" class="mce-container-body"></div>
+                          </div>
+                          <div id="mceu_2" class="mce-edit-area mce-container mce-panel mce-stack-layout-item mce-last"
+                            hidefocus="1" tabindex="-1" role="group" style="border-width: 1px 0px 0px;"><iframe id="answer_ifr"
+                              frameborder="0" allowtransparency="true" title="Rich Text Area. Press Alt-Shift-H for help."
+                              style="width: 100%; height: 135px; display: block;"></iframe></div>
+                        </div>
+                      </div><textarea class="wp-editor-area" style="height: 135px; display: none;" autocomplete="off"
+                        cols="40" name="answer" id="answer" aria-hidden="true"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="invalid-feedback">
+                    Please insert min. 20 characters. </div>
+                  <div class="text-center mt-3">
+                    <a href="#" class="btn btn-success btn-md show_login waves-effect waves-light">Post</a>
+                  </div>
+                </form>
+              </div>
+              <!-- Panel 1 -->
+              <!-- Panel 2 -->
+              <div class="tab-pane tab-preview fade" id="answer-preview" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="preview-html"></div>
+                <div class="text-center mt-3">
+                  <a href="#" class="btn btn-success btn-md show_login waves-effect waves-light">Post</a>
+                </div>
+              </div>
+              <!-- Panel 2 -->
+            </div>
+            <!-- Default form reply -->
+          </div>
+          <!--Card: Answer-->
+        </div>
+        <!--Grid column-->
+        <!--Grid column-->
+        <div class="col-md-4 mb-4">
+          <!--Card-->
+          <div class="card mb-4">
+            <!-- Card header -->
+            <div class="card-header">Status</div>
+            <!--Card content-->
+            <div class="card-body d-flex justify-content-between">
+              <p class="mb-0 pt-2">
+                <i class="fa fa-reply purple-text mr-2"></i>Answered </p>
+            </div>
+          </div>
+          <!--/.Card-->
+          <!--Card-->
+          <div class="card mb-4">
+            <!-- Card header -->
+            <div class="card-header">Specification of the issue</div>
+            <!--Card content-->
+            <div class="card-body">
+              <ul class="list-unstyled">
+                <li>
+                  <strong>User</strong>:
+                  <span>Pro</span>
+                </li>
+                <li>
+                  <strong>Premium support</strong>:
+                  <span>No</span>
+                </li>
+                <li>
+                  <strong>Technology</strong>:
+                  <span>General Bootstrap questions</span>
+                </li>
+                <li>
+                  <strong>MDB Version</strong>:
+                  <span>-</span>
+                </li>
+                <li>
+                  <strong>Device</strong>:
+                  <span>-</span>
+                </li>
+                <li>
+                  <strong>Browser</strong>:
+                  <span>-</span>
+                </li>
+                <li>
+                  <strong>OS</strong>:
+                  <span>-</span>
+                </li>
+                <li>
+                  <strong>Provided sample code</strong>:
+                  <span>No</span>
+                </li>
+                <li>
+                  <strong>Provided link</strong>:
+                  <span>No</span>
+                </li>
+                <!--
+                <li>
+                    <strong>Provided MDB snippet</strong>:
+                    <span>No</span>
+                </li>
+                -->
+              </ul>
+            </div>
+          </div>
+          <!--/.Card-->
+          <!--Card: User-->
+          <div class="card forum-card-img-64 text-center mb-4">
+            <!-- Card header -->
+            <div class="card-header">About author</div>
+            <!--Avatar-->
+            <div class="mt-4">
+              <img src="https://secure.gravatar.com/avatar/62c9c125499e280d7f96a75e939f3046?s=96&amp;d=mm&amp;r=g" alt=""
+                class="rounded-circle mr-2">
+            </div>
+            <div class="card-body">
+              <!--Name-->
+              <h5 class="card-title font-weight-bold">
+                <a href="/profile/?id=35406">fredemagi</a>
+              </h5>
+              <!--<a class="badge unique-color">118 Followers</a>-->
+              <!--<a class="badge unique-color-dark">8 following</a>-->
+              <!-- Achievements -->
+              <hr class="my-2">
+              <a class="badge red darken-4">0 <i class="fa fa-heart"></i>
+              </a>
+              <!--<a class="badge pink darken-2">7 snippets</a>-->
+              <!--<br>-->
+              <!--<a class="badge deep-orange darken-2">8 articles</a>-->
+              <a class="badge amber darken-4">0 projects</a>
+              <hr class="my-2">
+              <a class="badge purple">0 support score</a>
+              <a class="badge deep-purple">4 questions</a>
+              <a class="badge indigo">0 answers</a>
+              <hr class="my-2">
+              <a class="badge green">Pro</a>
+              <!--
+                    <a class="badge green">Bootstrap Master</a>
+                    <a class="badge green">Angular Master</a>
+                    <a class="badge green">BrandFlow Master</a>
+                    <a class="badge green">MDB Partner</a>
+                    -->
+              <!-- Achievements -->
+            </div>
+          </div>
+          <!--/.Card: User-->
+        </div>
+        <!--Grid column-->
+        <script type="text/javascript">var question_id = "57029";</script>
+      </div>
+      <!--Grid row-->
+    </div>
+  </section>
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript" src="js/app.js"></script>
+  <!--  My custom app.js -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+    $("body").on("click", ".badge", function () {
+      $(this).siblings("p").css("color", "green")
+
+    })
+
+  </script>
+</body>
+
+</html>

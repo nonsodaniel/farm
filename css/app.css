@@ -1,8 +1,8 @@
 .homeAgric{height:auto}
 .homeAgricDivs{margin-bottom: 15px}
-.header1{text-align: center;font-size: 61px;  font-family: Times New Roman, Times, serif;}
+.header1{text-align: center;font-size: 55px;  font-family: Times New Roman, Times, serif;}
 .navbar{background:#1e9823 }
-.img_header{height:60px;width:75%}
+.img_header{height:70px;}
 .middle_image{background-image: url(1.jpg);}
 .nav-item{padding-left: 20px;font-size: 18px}
 #img_div{ height: 230px;width: 100%;
@@ -108,9 +108,7 @@
   .img_sponsor{width: 70%;border-radius: 50px
   }
   .iframe{width: 100%}
-  .footer{
-
-  }
+ 
   .logo{
   	width: 20%;height: 50px;
   	background-image: url('img/logo.png');background-repeat: no-repeat;background-size: cover;
@@ -155,6 +153,16 @@
    .our-services a{
     color:black; 
   }
+
+  .our-services-1 .img{
+    text-align: center
+}
+
+.our-services-1 .img img{
+height:150px;
+width: 60%;
+}
+
   .forumH1{
     font-family: "Roboto Slab",Georgia,serif;
    font-size: 19px;
@@ -162,4 +170,19 @@
     letter-spacing: .15px;
     text-align: inherit;
     text-transform: none;
+  }
+
+  .see-services{
+    color:#1e9823;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:10px;
+    padding-top:10px;
+    border:1px solid #1e9823;
+  }
+
+  .see-services:hover{
+    color:white;
+    background-color: #1e9823;
+    border:1px solid white;
   }

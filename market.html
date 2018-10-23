@@ -1,0 +1,321 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>__Farming</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+    <style type="text/css">
+      /* Necessary for full page carousel*/
+      html,
+      body,
+      header,
+      .view {
+        height: 100%;
+      }
+
+      /* Carousel*/
+      .carousel,
+      .carousel-item,
+      .carousel-item.active {
+        height: 100%;
+      }
+      .carousel-inner {
+        height: 100%;
+      }
+
+      @media (min-width: 800px) and (max-width: 850px) {
+        .navbar:not(.top-nav-collapse) {
+            background: #1C2331!important;
+        }
+    }
+
+    </style>
+  </head>
+
+  <body style="overflow-x: hidden;">
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+      <div class="container">
+
+        <!-- Brand -->
+        <a class="navbar-brand" href="https://farms.com/material-design-for-bootstrap/">
+          <strong>__FarmSavvy__</strong>
+        </a>
+
+        <!-- Collapse -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <!-- Left -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="farming.html">Farming</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Right -->
+          <ul class="navbar-nav nav-flex-icons">
+            <li class="nav-item">
+              <a href="https://www.facebook.com/farms" class="nav-link">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://twitter.com/farms" class="nav-link">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link border border-light rounded waves-effect waves-light" data-target="#modalLRFormDemo" data-toggle="modal">
+                <i class="fa fa-login mr-2"></i>Log In
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </nav>
+
+    <div class="modal fade show" id="modalLRFormDemo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="padding-right: 19px;">
+      <div class="modal-dialog cascading-modal" role="document">
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Modal cascading tabs-->
+          <div class="modal-c-tabs">
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs tabs-2 light-green darken-3" role="tablist" style="background: #054e08!important;">
+              <li class="nav-item waves-effect waves-light">
+                <a class="nav-link" data-toggle="tab" href="#panel17" role="tab" aria-selected="false">
+                  <i class="fa fa-user mr-1"></i> Login</a>
+              </li>
+              <li class="nav-item waves-effect waves-light">
+                <a class="nav-link active show" data-toggle="tab" href="#panel18" role="tab" aria-selected="true">
+                  <i class="fa fa-user-plus mr-1"></i> Register</a>
+              </li>
+            </ul>
+
+            <!-- Tab panels -->
+            <div class="tab-content">
+              <!--Panel 17-->
+              <div class="tab-pane fade in" id="panel17" role="tabpanel">
+
+                <!--Body-->
+                <div class="modal-body mb-1">
+                  <div class="md-form form-sm">
+                    <i class="fa fa-envelope prefix"></i>
+                    <input type="text" id="log_email" class="form-control form-control-sm log_email">
+                    <label for="form2">Your email</label>
+                  </div>
+
+                  <div class="md-form form-sm">
+                    <i class="fa fa-lock prefix"></i>
+                    <input type="password" id="log_password" class="form-control form-control-sm log_password">
+                    <label for="form3">Your password</label>
+                  </div>
+                  <div class="text-center mt-4">
+                    <button class="btn btn-success waves-effect waves-light btn_login">Log in
+                      <i class="fa fa-sign-in ml-1"></i>
+                    </button>
+                  </div>
+                </div>
+                <!--Footer-->
+                <div class="modal-footer">
+                  <div class="options text-center text-md-right mt-1">
+                    <p>Not a member?
+                      <a href="#" class="green-text">Click <b>Register</b> <i class="fa fa-sign-in ml-1"></i></a>
+                    </p>
+                    <p>Forgot
+                      <a href="#" class="green-text">Password?</a>
+                    </p>
+                  </div>
+                  <button type="button" class="btn btn-outline-success waves-effect ml-auto" data-dismiss="modal">Close</button>
+                </div>
+
+              </div>
+              <!--/.Panel 7-->
+
+              <!--Panel 18-->
+              <div class="tab-pane fade active show" id="panel18" role="tabpanel">
+
+                <!--Body-->
+                <div class="modal-body" style="overflow-y: auto;">
+                  <div class="md-form form-sm">
+                    <i class="fa fa-user prefix"></i>
+                    <input type="text" id="name" class="form-control form-control-sm name">
+                    <label for="name">Your Full Name</label>
+                  </div>
+                  <div class="md-form form-sm">
+                    <i class="fa fa-envelope prefix"></i>
+                    <input type="email" id="email" class="form-control form-control-sm email">
+                    <label for="email">Email</label>
+                  </div>
+                  <div class="md-form form-sm">
+                    <i class="fa fa-mobile prefix"></i>
+                    <input type="number" id="phone" class="form-control form-control-sm phone">
+                    <label for="form6">Phone No</label>
+                  </div>
+                  <div class="md-form form-sm">
+                    <i class="fa fa-home prefix"></i>
+                    <input type="text" id="state" class="form-control form-control-sm state">
+                    <label for="form5">Your State</label>
+                  </div>
+                   <div class="md-form form-sm">
+                    <i class="fa fa-home prefix"></i>
+                    <input type="text" id="lga" class="form-control form-control-sm lga">
+                    <label for="form5">Your Local Government</label>
+                  </div>
+                   
+                   <div class="md-form form-sm">
+                    <i class="fa fa-lock prefix"></i>
+                    <input type="password" id="password1" class="form-control form-control-sm password1">
+                    <label for="password">Password</label>
+                  </div>
+                  <div class="md-form form-sm">
+                    <i class="fa fa-lock prefix"></i>
+                    <input type="password" id="password2" class="form-control form-control-sm password2">
+                    <label for="password">Confirm password</label>
+                  </div>
+                  
+
+                  <div class="text-center form-sm mt-4">
+                    <button class="btn btn-success waves-effect waves-light sign_up">Sign up
+                      <i class="fa fa-sign-in ml-1"></i>
+                    </button>
+                  </div>
+
+                </div>
+                <!--Footer-->
+                <div class="modal-footer">
+                  <div class="options text-right">
+                    <p class="pt-1">Already have an account?
+                      <a href="#" class="green-text">Log In</a>
+                    </p>
+                  </div>
+                  <button type="button" class="btn btn-outline-success waves-effect ml-auto" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+              <!--/.Panel 8-->
+            </div>
+
+          </div>
+        </div>
+        <!--/.Content-->
+      </div>
+    </div>
+
+      
+
+      <div class="">   
+        <div class="" id="img_div" style="background-image: url('img/dark_green.jpg');background-repeat: no-repeat;background-size: cover;">
+        <h2>bksj sb </h2>
+        </div>
+      </div><br><br>
+
+      <h6 class="motto"  style="text-align: center;">Our Mission: <b>Too Improve the standards of Technology in Agriculture</b></h6>
+  <!--      <h3 class="motto-after"  style="text-align: center;"><b><i style="color: green;font-size: 30px">Forever</i> Forward!</b></h3>
+   -->  <br><hr>
+
+
+   <h2 class="priority_header" style="text-align: center;"><b>Our Various <b style="color: green">Services</b></b></h2>
+
+       <div class="container our-services">
+          <div class="row">
+         <div class="col-md-4">
+            <div class="service">
+              <div class="img"><img src="img/weather.png"></div><br>
+              <h5 class="about_food"><b>Weather Forecast</b></h5><br>
+              <p>Get real time updates of the various weather data around you; temperature, humidity,
+               accurate rain predictions to enable you know what actions to carry out.
+                Stay tuned and chill while we deliver this data to you.</p>
+            </div><hr>
+
+         </div>
+          <div class="col-md-4">
+            <div class="service">
+              <div class="img"><img src="img/forum.png"></div><br>
+              <h5 class="about_food"><b>Interactive forum</b></h5><br>
+              <p>Get first hand answers from professionals from all agricultural fields on the forum. 
+              You can join for free today and earn more points while contributing to other 
+                farmers in helping them solve their problems.</p>
+            </div><hr>
+         </div>
+          <div class="col-md-4">
+            <div class="service">
+              <div class="img"><img src="img/market.png"></div><br>
+              <h5 class="about_food"><b>Marketplace</b></h5><br>
+              <p>Get a ready market for your farm produce.
+              Get connected to a wide variety of people from all around the country 
+              who are willing to buy your farm products. List up your products in the marketplace and start selling today!</p>
+            </div><hr>
+
+         </div>
+       </div>
+       <div class="row">
+          <div class="col-md-4">
+            <div class="service">
+              <div class="img"><img src="img/sms1.png" class="fourth"></div><br>
+              <h5 class="about_food"><b>SMS UPDATES</b></h5><br>
+              <p>Receive messages from us about current epidemic, how to control them 
+              and most importantly how to avoid them. Receive latest farming info on how to manage your farms to increase productivity.</p>
+            </div><hr>
+
+         </div>
+       </div>
+  </div><br><br>
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Initializations -->
+     <script type="text/javascript" src="js/app.js"></script>
+    <!--  My custom app.js -->
+    <script type="text/javascript">
+      // Animations initialization
+      new WOW().init();
+      $("body").on("click", ".badge", function(){
+      $(this).siblings("p").css("color", "green")
+        
+      })
+     
+    </script>
+  </body>
+
+  </html>

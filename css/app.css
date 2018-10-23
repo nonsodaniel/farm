@@ -37,7 +37,7 @@
 }
 .priority_header{
 	font-family: "Roboto Slab",Georgia,serif;
-	 font-size: 45px;
+	 font-size: 38px;
     font-weight: 400;
     letter-spacing: .15px;
     text-align: inherit;
@@ -120,4 +120,46 @@
   	    width: 134px;
     height: 50px;
     border-radius: 7px;
+  }
+
+  .our-services .img{
+  		text-align: center
+  }
+
+  .our-services .img img{
+  height:150px;
+  width: 60%;
+}
+
+  .our-services .img img.fourth{
+  height:150px;
+  width: 50%;
+}
+
+
+ .our-services h5{
+  		text-align: center
+  }
+
+ .our-services p{
+  		font-family: serif;
+  		font-size: 18px;
+  		text-align:center;
+  }
+
+   .our-services .service:hover{
+  		border: 1px solid red;
+  		cursor:pointer;	
+  }
+
+   .our-services a{
+    color:black; 
+  }
+  .forumH1{
+    font-family: "Roboto Slab",Georgia,serif;
+   font-size: 19px;
+    font-weight: 400;
+    letter-spacing: .15px;
+    text-align: inherit;
+    text-transform: none;
   }

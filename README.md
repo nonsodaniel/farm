@@ -6,7 +6,7 @@
 
 - Ihedioha Chinonso Daniel, nonsodaniel07@gmail.com
 - Kolapo Olalekan Ibrahim, kolapo.pacholekan@gmail.com
-- Ekunola John Tobi, sanusikorede@gmail.com
+- Ekunola John Tobi, johnekunola@gmail.com
 
 
 # Problem
